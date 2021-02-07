@@ -39,7 +39,7 @@ public class Examples_with_string
 		
 		
 		
-		String boom = "";
+		String boom = "Boom";
 		int num = boom.length();
 		System.out.println(num + "\n");
 		if (num == 0) {
@@ -63,5 +63,24 @@ public class Examples_with_string
 	    String some_text = "Hello World";
 	    System.out.println(some_text.toLowerCase() + "\n"); // Робить всі букви маленькими
 	    System.out.println(some_text.toUpperCase() + "\n"); // Робить всі букви великими
+	    
+	    int n = greeting.length();
+	    System.out.println(n + "\n");
+	    
+	    int cpCount = greeting.codePointCount(0, greeting.length());
+	    System.out.println(cpCount + "\n");
+	    System.out.println(greeting.charAt(0) + "\n");
+	    
+	    
+	    int index = greeting.offsetByCodePoints(0, 3);
+	    int cp = greeting.codePointAt(index);
+	    System.out.println(index + "   " + cp);
+	    
+	    String sentence = "O is the set of octonions";
+	    char ch = sentence.charAt(0);
+	    System.out.println("\n" + ch);
+	    
+	    int []CodePoints = sentence.codePoints().toArray();
+	    
  	}
 }

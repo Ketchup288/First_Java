@@ -17,7 +17,29 @@ public class StrBuilderExample {
 		 System.out.println(normalString); // Переві з типу StringBuilder у строку і вивів її
 		 
 		 builder.delete(0, 7);
+		 System.out.println("\n" + builder.toString() + "\n");
 		 
-		 System.out.println(builder.toString());
+		 StringBuilder greeting = new StringBuilder();
+		 String hel = "Hel";
+		 String lo = "lo!";
+		 
+		 greeting.append(hel);
+		 greeting.append(lo);
+		 
+		 System.out.println(greeting.toString() + "\n");
+		 
+		 System.out.println(greeting.charAt(0) + "\n");
+		 
+		 System.out.println(greeting.capacity() + "\n");
+		 
+		 greeting.deleteCharAt(5);
+		 
+		 System.out.println(greeting.toString());
+		 
+		 String ths = "!";
+		 
+		 greeting.insert(5, ths); // Тоже просто вставляє
+		 
+		 System.out.println("\n" + greeting.toString());
 	 }
 }
